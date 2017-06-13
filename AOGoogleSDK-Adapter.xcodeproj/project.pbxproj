@@ -13,9 +13,11 @@
 		2BA3C5601EEF26AE00665739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA3C55E1EEF26AE00665739 /* Main.storyboard */; };
 		2BA3C5621EEF26AE00665739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BA3C5611EEF26AE00665739 /* Assets.xcassets */; };
 		2BA3C5651EEF26AE00665739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BA3C5631EEF26AE00665739 /* LaunchScreen.storyboard */; };
+		F8BFC9FF03194FCEF182AE59 /* Pods_AOGoogleSDK_Adapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFF1FABEE3D3B6461FEBF08 /* Pods_AOGoogleSDK_Adapter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1978C109350BF24391AE37CE /* Pods-AOGoogleSDK-Adapter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOGoogleSDK-Adapter.release.xcconfig"; path = "Pods/Target Support Files/Pods-AOGoogleSDK-Adapter/Pods-AOGoogleSDK-Adapter.release.xcconfig"; sourceTree = "<group>"; };
 		2BA3C5521EEF26AE00665739 /* AOGoogleSDK-Adapter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AOGoogleSDK-Adapter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA3C5561EEF26AE00665739 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2BA3C5581EEF26AE00665739 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		2BA3C5611EEF26AE00665739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BA3C5641EEF26AE00665739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BA3C5661EEF26AE00665739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95A4ECCF6C5010C75F0197BE /* Pods-AOGoogleSDK-Adapter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AOGoogleSDK-Adapter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AOGoogleSDK-Adapter/Pods-AOGoogleSDK-Adapter.debug.xcconfig"; sourceTree = "<group>"; };
+		DEFF1FABEE3D3B6461FEBF08 /* Pods_AOGoogleSDK_Adapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AOGoogleSDK_Adapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8BFC9FF03194FCEF182AE59 /* Pods_AOGoogleSDK_Adapter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				2BA3C5541EEF26AE00665739 /* AOGoogleSDK-Adapter */,
 				2BA3C5531EEF26AE00665739 /* Products */,
+				387902F0ABAF7A577DBB352D /* Pods */,
+				5AC8A1F51724DCA51AEE4553 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		387902F0ABAF7A577DBB352D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95A4ECCF6C5010C75F0197BE /* Pods-AOGoogleSDK-Adapter.debug.xcconfig */,
+				1978C109350BF24391AE37CE /* Pods-AOGoogleSDK-Adapter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5AC8A1F51724DCA51AEE4553 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEFF1FABEE3D3B6461FEBF08 /* Pods_AOGoogleSDK_Adapter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BA3C5691EEF26AE00665739 /* Build configuration list for PBXNativeTarget "AOGoogleSDK-Adapter" */;
 			buildPhases = (
+				346B785BAE18C3F32CFE03E9 /* [CP] Check Pods Manifest.lock */,
 				2BA3C54E1EEF26AE00665739 /* Sources */,
 				2BA3C54F1EEF26AE00665739 /* Frameworks */,
 				2BA3C5501EEF26AE00665739 /* Resources */,
+				0FC1EF6781AFF73BB9D00DB2 /* [CP] Embed Pods Frameworks */,
+				5B62AA467E748C12BD72ED01 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0FC1EF6781AFF73BB9D00DB2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AOGoogleSDK-Adapter/Pods-AOGoogleSDK-Adapter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		346B785BAE18C3F32CFE03E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5B62AA467E748C12BD72ED01 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AOGoogleSDK-Adapter/Pods-AOGoogleSDK-Adapter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2BA3C54E1EEF26AE00665739 /* Sources */ = {
@@ -273,6 +348,7 @@
 		};
 		2BA3C56A1EEF26AE00665739 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95A4ECCF6C5010C75F0197BE /* Pods-AOGoogleSDK-Adapter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XNM36GWK3G;
@@ -285,6 +361,7 @@
 		};
 		2BA3C56B1EEF26AE00665739 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1978C109350BF24391AE37CE /* Pods-AOGoogleSDK-Adapter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XNM36GWK3G;
